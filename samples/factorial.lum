@@ -1,0 +1,15 @@
+// Lumina Sample Program: Recursive Factorial
+// Demonstrates function declaration, if conditions, arithmetic, recursion, variables and print built-in.
+
+fn factorial(n: int) -> int {
+  if (n <= 1) {
+    return 1;
+  }
+  return n * factorial(n - 1);
+}
+
+let num: int = 5;
+let result: int = factorial(num);
+
+print("The factorial of 5 is:");
+print(result);

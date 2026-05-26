@@ -1,0 +1,27 @@
+// Lumina Error Demonstration Program
+// This program is intended to show the compiler's diagnostic logs and parser recovery.
+
+// 1. Lexical Error: illegal characters
+let illegalChar: int = @; 
+
+// 2. Syntax/Parser Error: Missing semicolon
+let valOne: int = 100
+let valTwo: int = 200; // Parser recovers on statement boundary and successfully parses this!
+
+// 3. Semantic Error: Redeclaration
+let valTwo: int = 300; 
+
+// 4. Semantic Error: Type mismatch
+let text: string = "hello";
+let badAssign: int = text; 
+
+// 5. Semantic Error: Constant re-assignment
+const PI: float = 3.14;
+PI = 3.14159; 
+
+// 6. Semantic Error: Undeclared variable usage
+let finalSum: int = valTwo + undefinedVar;
+
+// 7. Semantic Warning: Unused variable
+let unusedVar: bool = true;
+print("Finished loading compiler error demonstrations.");

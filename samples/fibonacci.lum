@@ -1,0 +1,17 @@
+// Lumina Sample Program: Iterative Fibonacci Sequence
+// Demonstrates while loops, multiple variables assignment and math.
+
+let limit: int = 10;
+let a: int = 0;
+let b: int = 1;
+let count: int = 0;
+
+print("Iterative Fibonacci sequence first 10 terms:");
+
+while (count < limit) {
+  print(a);
+  let temp: int = a + b;
+  a = b;
+  b = temp;
+  count = count + 1;
+}
