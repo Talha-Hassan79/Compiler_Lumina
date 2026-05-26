@@ -1,0 +1,15 @@
+node_modules/
+dist/
+.env
+.vscode/
+.DS_Store
+# IDE/editor files
+*.log
+*.tmp
+# Build artifacts
+*.js.map
+*.css.map
+# Scratch & temporary directories
+scratch/
+browser_recordings/
+html_artifacts/
